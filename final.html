@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="refresh" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login and Registration</title>
+<link rel="stylesheet" type="text/css" href="css/style4.css">
+</head>
+<body>
+<!-- <div class="col1">
+<img src="abc.jpg" height=" 630px" width="900px">
+</div> -->
+<div class="form-container">
+<div class="form-btn">
+<h3 onclick="login()">Login</h3>
+<h3 onclick="register()">Register</h3>
+<hr id="Indicator">
+</div>
+<form id="LoginForm" onsubmit="return validation()">
+<input type="text" placeholder="Username" name="user"  id="user" >
+<span id="username"></span>
+<input type="password" placeholder="Password" name="pass" id="pass" >
+<span id="passwords"></span>
+<button type="submit" class="btn">Login</button>
+<a href="">Forgot password</a>
+</form>
+
+<form id="RegForm" onsubmit="return validation()">
+<input type="text" placeholder="Username" required>
+<span id="nickname"></span>
+<input type="email" placeholder="Email" name="email" id="email">
+<span id="emailids"></span>
+<input type="password" placeholder="Password" required>
+<span id="password"></span>
+<button type="submit" class="btn">Register</button>
+</form>
+</div>
+<script>
+function validation(){
+    var user = document.getElementById('user').value;
+    var pass = document.getElementById('pass').value;
+    var emails = document.getElementById('email').value;
+
+
+if (user == ""){
+        document.getElementById('username').innerHTML = " **Please fill the username field";
+        return false;
+    }
+    if(user.length==2){
+        document.getElementById('username').innerHTML = "**Name must be between 2 to 20 words";
+        return false;
+    }
+    if(!isNaN(user)){
+        document.getElementById('username').innerHTML = "**name must be in alphabet";
+        return false;
+    }
+    
+
+    if (pass == ""){
+        document.getElementById('passwords').innerHTML = "**Please fill the password field";
+        return false;
+    }
+    if(pass.length!=10){
+        document.getElementSById('passwords').innerHTML = "**password must be strong";
+        return false;
+    }
+    if(pass.length>=10){
+        document.getElementById('passwords').innerHTML = "";
+        return true;
+    }
+    
+
+if (emails == ""){
+        document.getElementById('emailids').innerHTML = "**Please fill the emalis field";
+        return false;
+
+    }
+    if(emails.indexOF('@')<=0){
+        document.getElementById('emailids').innerHTML = "**invalid email";
+        return false;
+    }
+    if((emails.charAT(emails.length-4)!='.') && (emails.charAT(emails.length-3)!='.')){
+        document.getElementById('emailids').innerHTML = "**invalid position email";
+        return false;
+    }
+}
+var LoginForm=document.getElementById("LoginForm");
+var RegForm=document.getElementById("RegForm");
+var Indicator=document.getElementById("Indicator");
+
+function login(){
+RegForm.style.transform="translateX(350px)";
+LoginForm.style.transform="translateX(350px)";
+Indicator.style.transform="translateX(-100px)";
+}
+function register(){
+RegForm.style.transform="translateX(0px)";
+LoginForm.style.transform="translateX(0px)";
+Indicator.style.transform="translateX(100px)";
+}
+</script>
+</body>
+</html>

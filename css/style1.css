@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Noto+Sans+KR:wght@300&family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,300&family=Mate+SC&family=Noto+Sans+KR:wght@300&family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,300&family=Mate+SC&family=Noto+Sans+KR:wght@300&family=Quicksand:wght@300&family=Roboto+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.container{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: black;
+}
+.navbar{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+.logo{
+    width: 50%;
+    cursor: pointer;
+    color: white;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #999;
+    font-size: 12px;
+    padding: 5px 2px;
+}
+nav ul li a:hover{
+    color: #fff;
+    border-bottom: 3px solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body
+{
+    background-image: url('images/sa.jpg') ;
+    background-size: cover;
+    background-position: center;
+}
+.ss{
+    background-image: url('images/sa.jpg');
+    
+}
+.logo
+{
+        font-family: 'Limelight', cursive;
+        font-size: 50px;
+        margin-left: 200px;
+        
+}
+.tip
+{
+    padding-top: 20px;
+}
+.menu-bar
+{
+    
+    background:rgb(0, 10, 100);
+    text-align: center;
+}
+.menu-bar ul
+{
+    display:inline-flex;
+    list-style: none;
+    color: white;
+}
+.menu-bar ul li
+{
+    width: 110px;
+    margin: 20px;
+    padding: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.menu-bar .fa
+{
+    margin-right: 10px;
+}
+.active, .menu-bar ul li:hover
+{
+ background: rgb(214, 99, 99);
+ border-radius: 4px;
+}
+.sub-menu-1
+{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: rgb(0, 10, 100);
+    margin-top: 15px;
+    margin-left: 15px;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 8px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 120px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: red;
+}
+.fa-angle-right{
+    float: right;
+}
+.sub-menu-2{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:hover .sub-menu-2{
+    display: block;
+    position: absolute;
+    background: rgb(0, 10, 100);
+    margin-top: -10px;
+    margin-left: 128px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:hover .sub-menu-2 li:last-child{
+    border-bottom: none;
+} */

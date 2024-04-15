@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>login page</title>
+	<!-- <link rel="stylesheet" type="text/css" href="css fa\all.min.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="css fa\fontawesome.min.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"> -->
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style type="text/css">
+		body {
+			/* background: url(clo4.jpg); */
+			background-image: url(clo4.jpg);
+			background-image: linear-gradient(to bottom, rgba(131, 143, 209, 0.6) 0%, rgba(155, 156, 161, 0.973) 100%), url(clo4.jpg);
+
+			background-repeat: no-repeat;
+			height: 120%;
+			background-attachment: scroll;
+			background-size: cover;
+			opacity: 0.9;
+			/* z-index: 0.2; */
+		}
+
+		.company {
+			/* background-color: rgb(243, 243, 98); */
+			text-align: center;
+			font-weight: bold;
+			font-size: 35px;
+			font-family: cursive;
+
+		}
+
+		.logincontainer {
+			margin-top: -20px;
+			align-items: center;
+			/*	justify-content: center;
+*/
+			text-align: center;
+			/* background-color:linear-gradient(to bottom, rgba(245, 110, 173, 0.6) 0%,rgba(116, 31, 49, 0.973) 100%); */
+			background-color: rgb(201, 185, 201);
+			display: table;
+			width: 55%;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		.medium {
+			height: 50px;
+			text-decoration: none;
+			align-items: center;
+			list-style-type: none;
+			display: flex;
+			width: all;
+			justify-content: center;
+			/* background-color: rgb(245, 222, 179); */
+			border-bottom: 3px solid rgb(255, 255, 255);
+		}
+
+		.medium li {
+			font-size: 30px;
+			padding-right: 40px;
+			padding-left: 40px;
+			padding-top: 6px;
+			padding-bottom: 6px;
+		}
+
+		.medium li a {
+			text-decoration: none;
+			color: black;
+		}
+
+		.medium li a:hover {
+			font-weight: bold;
+
+		}
+
+		.signupdirect {
+			background-color: rgb(223, 182, 130);
+			display: flex;
+			justify-content: space-evenly;
+		}
+
+		.content {
+			display: flex;
+			background-color: unset;
+			border-color: black;
+			border-style: solid;
+			border-width: 0px 2px;
+			/* border: 2px solid black; */
+		}
+
+		.content a {
+			text-decoration: none;
+			color: black;
+		}
+
+		.content a:hover {
+			font-weight: bold;
+			font-style: italic;
+			background-color: rgb(240, 239, 239);
+		}
+
+		pre {
+			font-size: 20px;
+			/*margin: 15px;*/
+			margin-right: 40px;
+			margin-left: 40px;
+
+		}
+
+		.rules {
+			margin-bottom: 40px;
+			margin-top: -15px;
+			font-size: 18px;
+			font-family: cursive;
+		}
+
+		.loginform {
+			padding: 50px;
+			background-color: rgb(206, 168, 206);
+		}
+
+		.input-group {
+			margin-top: 30px;
+			font-size: 20px;
+			font-weight: bold;
+			font-family: helvetica;
+			text-transform: uppercase;
+		}
+
+		.loginform input {
+			width: 100%;
+			padding: 4px;
+			border-radius: 5px;
+			border: none;
+			line-height: 1.8;
+			font-size: 16px;
+			margin-top: 2px;
+		}
+
+		.interested {
+			display: flex;
+			flex-direction: row;
+			margin-top: 10px;
+			text-align: left;
+		}
+
+		.interested input {
+			margin-top: unset;
+		}
+
+		.interested {
+			margin-left: -10px;
+			justify-content: space-evenly;
+			font-family: initial;
+			font-size: 16px;
+		}
+
+		.interested #menswear {
+			width: 10%;
+			margin-right: -50px;
+			width: 1.1em;
+			height: 1.1em;
+		}
+
+		.interested #womenswear {
+			width: 10%;
+			margin-right: -50px;
+			width: 1.1em;
+			height: 1.1em;
+		}
+
+		#terms {
+			font-size: 20px;
+			margin-top: 50px;
+		}
+
+		.submit button {
+			font-size: 20px;
+			padding: 8px;
+			background-color: black;
+			color: white;
+		}
+
+		.submit button:hover {
+			border: 3px solid rgb(174, 175, 184);
+			box-shadow: 5px 5px 10px 1px rgb(78, 14, 252);
+		}
+	</style>
+
+</head>
+
+<body>
+
+
+
+	<div class="company">
+		<h1>Blue Shop</h1>
+	</div>
+	<div class="logincontainer">
+
+		<div class="option">
+			<ul class="medium">
+				<li style="font-weight: bold;"><a href="#">JOIN</a></li>
+				<li style="font-weight: bold;font-size: 50px;color: blue;margin-top: -9px;">|</li>
+				<li><a href="http://127.0.0.1:5500/goldensignin.html#" target="blank"> SIGN IN</a></li>
+			</ul>
+		</div>
+
+		<h2 style="font-family:cambria;">SIGN UP WITH...</h2>
+
+		<div class="signupdirect">
+			<div class="google">
+				<div class="content">
+					<a href="#">
+						<pre><span class="fa fa-google  fa-2x" style="color: rgb(10, 143, 5);"></span>  GOOGLE</pre>
+					</a>
+
+				</div>
+			</div>
+
+			<div class="google">
+				<div class="content">
+					<a href="#">
+						<pre><span class="fa fa-apple fa-2x" ></span>  APPLE</pre>
+					</a>
+				</div>
+			</div>
+
+			<div class="google">
+				<div class="content">
+					<a href="#">
+						<pre><span class="fa fa-facebook fa-2x" style="color: blue; "></span>  FACEBOOK</pre>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<br>
+		<p class="rules">Signing up with social is super quick.No extra passwords to remember.Don't worry, we'd never
+			share any of your data or post anything on your behalf </p>
+
+		<h2 style="font-family:cambria; margin-top: 80px; margin-bottom: -50px;">OR SIGN UP WITH EMAIL</h2>
+
+		<form class="loginform">
+			<div class="input-group">
+				<label for="firstname">First name:~</label>
+				<input type="text" id="firstname" placeholder="Enter your first name" required>
+			</div>
+
+			<div class="input-group">
+				<label for="lastname">Last name:~</label>
+				<input type="text" id="lastname" placeholder="Enter your last name" required>
+			</div>
+
+			<div class="input-group">
+				<label for="password">Password:~</label>
+				<input type="text" id="password" placeholder="Enter your password" required>
+			</div>
+
+			<div class="input-group">
+				<label for="dob">DATE OF BIRTH:~</label>
+				<input type="date" id="dob" required>
+			</div>
+
+			<div class="input-group">
+				<label for="email">EMAIL ADDRESS:~</label>
+				<input type="email" minlength="10" id="email" placeholder="Enter your email" required>
+			</div>
+
+			<div class="input-group">
+				<label for="interest ">MOSTLY INTERESTED IN</label>
+				<div class="interested">
+					<input type="radio" id="menswear">menswear
+					<input type="radio" id="womenswear">womenswear
+				</div>
+			</div>
+
+			<p id="terms">By creating your account,you agree to our Terms and Conditions & Privacy policy</p>
+
+			<div class="submit">
+				<button type="submit" id="submitus">SUBMIT</button>
+				<!-- <button><a href="#">JOIN ASOS</a></button> -->
+			</div>
+
+		</form>
+	</div>
+
+</body>
+
+</html>
+
+<!-- width: 100vw;
+height: 100vh;
+object-fit: cover;
+position: fixed;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+z-index: -1; -->
